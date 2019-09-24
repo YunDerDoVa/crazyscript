@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AdenRain</title>
+
+    <link rel="stylesheet" href="css/demo.css">
+
+  </head>
+  <body>
+
+    <div id="adenrain" class="demo"></div>
+
+    <script type="text/javascript" src="../background/adenrain/adenrain.js"></script>
+    <script type="text/javascript">
+      var rain = new Rain('adenrain');
+      rain.density = 64;
+      rain.gravity = 0.98;
+      rain.colorSet = ['red', 'rgb(0, 255, 0)', 'blue', 'gold'];
+      rain.xMin = 0;
+      rain.xMax = 100;
+      rain.deep = 3;
+
+      rain.init();
+      rain.loop();
+    </script>
+
+  </body>
+</html>
